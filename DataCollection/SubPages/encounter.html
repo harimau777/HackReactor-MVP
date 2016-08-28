@@ -1,0 +1,46 @@
+<div class="encounter">
+  <div class="instructions">
+    <p></p>
+  </div>
+  <form>
+    <div class="name">
+      <p>
+        Please write a name for this enemy:
+        You can use the following fill ins:
+        <ul>
+          <li>{{title}} - Inserts a random title.</li>
+          <li>{{theTitle}} - Inserts a random title prefixed by "the"</li>
+          <li>{{place}} - Inserts a random place.</li>
+          <li>{{order}} - Inserts a random organization.</li>
+        </ul>
+        For example:
+        <ul>
+          <li>"{{title}} Patches" could become "Unbreakable Patches"</li>
+          <li>"{{title}} Yorshka" could become "Company Captain Yorshka"</li>
+          <li>"Picklepum {{theTitle}}" could become "Picklepum The Crow"</li>
+          <li>"Siegward of {{place}}" could become "Siegward of Catarina"</li>
+          <li>"Deakons of {{order}}" could become "Deacons of the Deep"</li>
+        </ul>
+      </p>
+      <input class="name" type = "text"/>
+    </div>
+
+    <div class="description">
+      <p>
+        Please write a description of this enemy:
+        The maximum length is 500 characters.
+      </p>
+      <input class="description" type = "text"/>
+    </div>
+
+    <div class="type">
+      <p>
+        Please select this enemy's type:
+        This will determine things such as what type of blood they have (blood, oil, mana, sap, etc.)
+      </p>
+      <input class="type" type="dropdown"/>
+    </div>
+
+    <input type="submit" class="submitButton" value="Submit"/>
+  </form>
+</div>
